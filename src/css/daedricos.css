@@ -1,0 +1,178 @@
+.body-flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(163, 8, 8, 0.5);
+}
+
+body {
+  background-image: url('../imagens/daedra-wall.png');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.body-flex {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mod{
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 2.5rem;
+}
+
+.titulo-site{
+    border: none;
+}
+
+div {
+    width: 550px;
+    line-height: 1rem;
+    border: 1px solid white;
+    margin-bottom: 20px
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+p {
+    color: white;
+    text-align: center;
+    width: 550px;
+    line-height: 1rem;
+    padding: 1px;
+}
+
+aside {
+    width: 550px;
+    line-height: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px
+}
+
+.prince-card {
+    width: 550px;
+    line-height: 1rem;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+    background-color: rgba(46, 20, 20, 0.5);
+}
+
+.prince-card h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    border: #ccc;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prince-card p {
+    color: white;
+    text-align: center;
+    width: 530px; /* Reduzindo a largura para acomodar o espaço do padding */
+    line-height: 1rem;
+    padding: 1px;
+    padding-right: 20px; /* Adicionando espaçamento à direita */
+}
+
+.prince-card aside {
+    line-height: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Barra de rolagem vertical */
+    overflow-x: hidden; /* Oculta a rolagem horizontal */
+    max-height: 300px; /* Altura máxima para limitar o tamanho do aside */
+    scrollbar-width: thin; /* Espessura fina da barra de rolagem */
+    scrollbar-color: rgba(211, 19, 19, 0.5) rgba(102, 102, 102, 0.5); /* Cores semitransparentes da scrollbar */
+}
+
+
+.prince-card img {
+    display: block;
+    margin: auto;
+}
+
+.mod {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 2.5rem;
+    border: 2px solid white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.anchor-table {
+    position: fixed;
+    top: 50%;
+    left: 75px;
+    transform: translateY(-50%);
+    padding: 20px;
+    max-width: 200px;
+    overflow-y: auto;
+    z-index: 1;
+    border: 2px solid rgba(163, 8, 8, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .anchor-table ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .anchor-table li {
+    margin-bottom: 10px;
+  }
+  
+  .anchor-table a {
+    text-decoration: none;
+    color: #da1b1b;
+  }
+
+  .anchor-table a:hover {
+    color: whitesmoke;
+  }
+
+/* Estilizando a div quando ela estiver aberta (expandida) */
+.prince-card.open {
+  max-height: none;
+  overflow-y: auto;
+}
+
+/* Escondendo o conteúdo do príncipe por padrão */
+.prince-card aside, .prince-card img {
+  display: none;
+}
+
+/* Mantendo apenas o nome do príncipe visível */
+.prince-card h1 {
+  cursor: pointer;
+}
+
+/* Adicionando um estilo diferente quando o cartão estiver aberto */
+.prince-card.open h1 {
+  border-bottom: none; /* Remova a cor da borda inferior */
+}
+
+/* Exibindo o conteúdo quando o cartão estiver aberto */
+.prince-card.open aside, .prince-card.open img {
+  display: block;
+}
+
+.mod:hover {
+  color: red;
+}
